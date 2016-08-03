@@ -7,6 +7,9 @@ import com.jmstudios.serpents.SerpentsGame;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		new LwjglApplication(new SerpentsGame(), config);
+                config.title = "Serpents";
+                config.width = 800;
+                config.height = 480;
+                new LwjglApplication(new SerpentsGame(), config);
 	}
 }
