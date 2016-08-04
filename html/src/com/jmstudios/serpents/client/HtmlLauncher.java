@@ -7,13 +7,13 @@ import com.jmstudios.serpents.SerpentsGame;
 
 public class HtmlLauncher extends GwtApplication {
 
-        @Override
-        public GwtApplicationConfiguration getConfig () {
-                return new GwtApplicationConfiguration(480, 320);
-        }
+    @Override
+    public GwtApplicationConfiguration getConfig () {
+        return new GwtApplicationConfiguration(800, 480);
+    }
 
-        @Override
-        public ApplicationListener createApplicationListener () {
-                return new SerpentsGame();
-        }
+    @Override
+    public ApplicationListener createApplicationListener () {
+        return new SerpentsGame();
+    }
 }
